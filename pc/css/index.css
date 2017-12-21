@@ -1,0 +1,449 @@
+/* *****global public */
+@font-face {
+  font-family: Sansumi-UltraLight;
+  /*src: url("../../public/fontfamily/StMarie-Thin.otf");*/
+  /*src: url("../../public/fontfamily/Sansumi-Regular.ttf");*/
+  src: url("../../public/fontfamily/SERIFAT.TTF");
+  /*src: url("../../iconfont/Hero Light.otf");*/
+  
+  /*src: url("../../public/fontfamily/Hero.otf");*/
+  /*src: url("../../public/fontfamily/Sansumi-UltraLight.ttf");*/
+  /*src: url("../../public/fontfamily/circled_font_by_crazyformusic.ttf");*/
+  /*src: url("../../public/fontfamily/SilveradoExtraBoldCondensed.ttf");*/
+  /*src: url("../../public/fontfamily/Symbol Bold.ttf");*/
+}
+
+html{
+	height: 100%;
+}
+body{
+	background: url("../../public/img/11.jpg") no-repeat center 0;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	color: #626262;
+	font-family: Sansumi-UltraLight;
+	font-weight: bold;
+	overflow-x:hidden; 
+	height:100%;
+}
+/*禁用浏览器滚动条*/
+/*body,html{
+	height: 100%;
+	overflow: hidden;
+}
+.box{
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y:auto;
+}*/
+h2{
+	color: #CFCFCF;
+	font-size: 50px;
+}
+a{
+	color:#6e6e6e;
+}
+a:focus, a:hover{
+	color:#333;
+}
+/* iconfont */
+.icon {
+   width: 1em; height: 1em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+   font-size: 45px;
+   color: #fff;
+}
+/*伪类清浮动*/
+.clearfix:after,.clearfix:before{
+    content:"";
+    display:block;
+    clear: both;
+}
+.clearfix{
+    zoom:1;
+}
+/* 鼠标经过 */
+#work-experience .thumbnail:hover img,
+#work-experience .thumbnail:hover .caption{
+	cursor: url("../img/zoom-in-white.png"),pointer; 
+}
+/* 图片阴影 */
+.shadow {
+   /* -moz-box-shadow: 3px 3px 4px #000;
+    -webkit-box-shadow: 3px 3px 4px #000;*/
+    box-shadow: 2px 2px 5px -2px #111016;
+}
+
+
+/* *****更改bootstrap默认效果 */
+.navbar-default{
+	background: none;
+	border: none;
+}
+.navbar-default .navbar-nav>li>a{
+	color: #525252;
+	font-weight: 600;
+	padding:20px 0 3px 0;
+}
+#leftTitle{
+	padding:20px 0 0 50px;
+	color: #525252;
+	font-weight: 600;
+}
+.navbar-toggle{
+	margin: 12px 30px 0 0;
+}
+#rightBar>li{
+	padding-left: 50px;
+}
+@media screen and (max-width: 768px){
+	#rightBar{
+		background: #f8f8f8;
+	}
+}
+#rightBar>li:last-of-type{
+	padding-right: 70px;
+}
+/* 更改bootstrap默认li active效果 */
+.navbar-default .navbar-nav>.active>a{
+	border-bottom: solid 2px #000;
+	background:none;
+	color: #000;
+}
+.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus{
+	background:none;
+	color: #000;
+}
+/* 自定义hover效果 */
+.link a:before, .link a:after{
+	content: '';
+	border-bottom: solid 2px #000;
+	position: absolute;
+	bottom: -2px;
+	width: 0;
+}
+.link a:before { left: 0; }
+.link a:after { right: 0; }
+
+.navbar-default .navbar-nav>li>a:hover{
+	color: #000;
+	font-weight: 600;
+}
+.link a:hover:before, .link a:hover:after {
+  	width: 50%;
+}
+
+.link a:before, .link a:after {
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+/* *****silder section共同效果*/
+#about,#skills,#work-experience,#progect,#blogs,#other{
+	padding-top: 60px;
+	background: #fff;
+}
+p.navInfo{
+	font-size: 16px;
+	color: #000;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin-bottom: 5%;
+}
+#about #aboutDiv,#about .aboutInfo,#skills .media{
+	visibility: hidden;
+}
+
+
+/* *****home*/
+#home{
+	height: 100%;
+	/*background: #1E88E5;*/
+	padding-top: 50px;
+}
+#home>div{
+	width: 80%;
+	text-align: center;
+	margin:auto;
+	padding-top: 100px;
+	/*font-weight: bold;*/
+	color: #000;
+}
+#home>div>h1{
+	font-size: 50px;
+}
+#home>div>p{
+	margin-top: 30px;
+	font-size: 16px;
+}
+
+/*about*/
+#about #aboutDiv{
+	margin-bottom: 3%;
+}
+#about img{
+	width: 100%;
+}
+#about h4{
+	margin:0 0 5%;
+	letter-spacing: 2px;
+	line-height: 20px;
+	font-size: 14px
+}
+#about span{
+	display: inline-block;
+	width: 150px;
+}
+#about .row p{
+	border-bottom: 1px solid #E6E6E6;
+	margin-bottom: 0;
+	padding: 15px 0;
+}
+
+/*skills*/
+#skills{
+	background: #181818;
+	color: #fff;
+}
+#skills p.navInfo{
+	color:#fff;
+}
+#skills .media-body{
+	padding-left: 7%;
+	/*background: #ff9800;*/
+}
+#skills .media{
+	margin-top: 0;
+	margin-bottom: 5%;
+}
+
+/* work-experience */
+#work-experience .thumbnail{
+	/*background: #00bcd4;*/
+	position: relative;
+	height: 290px;
+	overflow: hidden;
+}
+#work-experience .caption{
+	position: absolute;
+	bottom: 0;
+	background: #fff;
+	width: 99%;
+	height: 90px;
+}
+#work-experience .caption h3{
+	margin-top: 5px;
+}
+
+
+/*progect*/
+#progect{
+	/*background: #ccacdd;*/
+	/*height: 1000px;*/
+}
+#progect #proNav{
+	margin-bottom: 2%;
+}
+#progect .tab-content a{
+	display: inline-block;
+	width: 25%;
+	background: #fff;
+}
+#progect .divInfo{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	/*display: table;*/
+	/*line-height: 1;*/
+}
+#progect .divInfo p{
+	opacity : 0;
+	filter: alpha(opacity=0);
+	/*vertical-align: middle;*/
+	/*display: table-cell;*/
+	font-size: 1.5rem;
+}
+@media screen and (max-width:768px){
+	#progect .tab-content a{
+		width: 50%;
+	}
+}
+#progect .tab-content a img{
+	width: 100%;
+	font-size: 0;
+	border:1px solid #fff;
+	box-sizing:border-box;
+}
+#progect .tab-content{
+	overflow:hidden;
+	width: 100%; 
+}
+
+/*blogs*/
+#blogs .thumbnail{
+	border-radius: 50%;
+	margin-left: 12%;
+	margin-right: 12%;
+	/*background:none;*/
+	border: none;
+	border:5px solid #f8f8f8;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+}
+#blogs .thumbnail .divInfo,#progect .divInfo{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top:0;
+	text-align: center;
+	background-color: rgba(0,0,0,0);
+	color: #fff;
+}
+#blogs .thumbnail .divInfo{
+	padding: 0 15%;
+}
+#blogs .divInfo h4{
+	margin-top: -50%;
+	padding-bottom: 5%;
+	border-bottom: 1px solid #fff;
+	margin-bottom: 4%;
+	font-size: 30px;
+}
+@media screen and (max-width: 768px){
+	.navbar-toggle{
+		margin-right: 50px;
+	}
+	.navbar-default .navbar-nav>.active>a{
+		border-bottom: none;
+	}
+	#blogs .thumbnail .divInfo{
+		color: #000;
+	}
+	#blogs .divInfo h4{
+		margin-top: 50%;
+		border-bottom: 1px solid #000;
+	}
+}
+#blogs .thumbnail img{
+	border-radius: 50%;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	max-width: none;
+	width: 100%;
+	height: 100%;
+	margin-left: -50%;
+	margin-top: -50%;
+}
+
+/*other*/
+#other{
+	height: 500px;
+	/*background: #111016;*/
+	text-align: center;
+}
+/*footer*/
+footer{
+	background: #fff;
+	border-top: 1px solid #ccc;
+}
+footer p{
+	padding: 20px;
+	margin:0;
+}
+
+/* *****回到顶部 */
+#scroll_to_top { cursor:pointer; z-index: 999;}
+#scroll_to_top:hover { opacity: 0.75; }
+.scrollToTop { 
+	display: none; 
+	font-weight: bold; 
+	height: auto; 
+	padding: 5px ; 
+	position: fixed; 
+	right: 45px; 
+	text-align: center; 
+	text-decoration: none; 
+	top: 85%; 
+	width: auto; 
+	background-color: #000; 
+	border-radius:3px; 
+}
+.scrollToTop svg { font-size: 18px;float: left;}
+.scrollToTop:hover { opacity: 0.5; }
+.scrollToTop:hover svg { position: relative; }
+
+/* *****css3动画元素样式 */
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 9999;
+  visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap {
+  display: block;
+  width: 80%;
+  max-width: 740px;
+  margin: 120px auto 0;
+}
+.close-btn {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  font-size: 36px;
+  background: none;
+  border: none;
+  outline: none;
+}
+.close-btn .icon{
+	color: #fff;
+}
+.noscroll {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+/* *****bgm*/
+.bgm-btn{ 
+    cursor: pointer;
+    position:fixed; 
+    top: 16px; right:16px; 
+    width: 30px; 
+    height: 30px; 
+    background-size: 100%; 
+    background-image: url("../img/music.png"); 
+    z-index: 10000; 
+    -webkit-animation: myrotate 5s linear 0s infinite normal;
+	animation: myrotate 5s linear 0s infinite normal;
+}
+.bgm-btn.mut{ 
+    background-position: 0px -30px;
+    -webkit-animation: none;
+    animation: none;
+ }
+@-webkit-keyframes myrotate {
+    0% { -webkit-transform:rotate(0deg);transform:rotate(0deg);}
+    25% { -webkit-transform:rotate(-90deg);transform:rotate(-90deg);}    
+    50% { -webkit-transform:rotate(-180deg);transform:rotate(-180deg);}
+    75% { -webkit-transform:rotate(-270deg);transform:rotate(-270deg);}
+    100% { -webkit-transform:rotate(-360deg);transform:rotate(-360deg);}
+}
+@keyframes myrotate {
+    0% { -webkit-transform:rotate(0deg);transform:rotate(0deg);}
+    25% { -webkit-transform:rotate(-90deg);transform:rotate(-90deg);}    
+    50% { -webkit-transform:rotate(-180deg);transform:rotate(-180deg);}
+    75% { -webkit-transform:rotate(-270deg);transform:rotate(-270deg);}
+    100% { -webkit-transform:rotate(-360deg);transform:rotate(-360deg);}
+}

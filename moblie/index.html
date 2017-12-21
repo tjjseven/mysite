@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <title>myInfo</title>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <!--作者信息，网站地址-->
+  <meta name="author" content="www.tseven.ml">
+  <!-- 苹果手机是否全屏显示页面-->
+  <!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
+  <!--控制苹果手机状态栏的颜色-->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!--数字不能当作电话号码使用-->
+  <meta name="format-detection" content="telephone=no">
+  <!--防止浏览器缓存数据-->
+  <meta http-equiv="Expires" content="-1"><!--数据缓存-->
+  <meta http-equiv="Cache-Control" content="no-cache"><!--所有缓存-->
+  <meta http-equiv="Pragma" content="no-cache"><!--参数缓存-->
+  <!--关键字，描述信息-->
+  <meta name="keywords" content="阿七 seven tseven 个人网站 WEB前端开发 移动开发 H5" />
+  <meta name="description" content="阿七前端个人网站" />
+  <link rel="shortcut icon" type="image/x-icon" href="../public/favicon.ico"/>
+  <link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+  <section>
+    <!-- view container -->
+    <ul id="pages" class="view-container">
+      <!-- pageA container -->
+      <li id="pageA" class="page-container"style="display:block;"> 
+        <header>HOME</header>
+        <div id="myNane">
+          <h1>I'M TANG JIAN JUN</h1>
+          <p id="welcome" class="page-num"></p> 
+        </div>
+      </li>
+      <!-- pageB container -->
+      <li id="pageB" class="page-container" style="display:none;"> 
+        <header>ABOUT ME</header> 
+        <div class="row pageTop">
+          <div class="col-xs-12">
+            <div class="thumbnail">
+              <img src="../public/img/9.jpg" alt="...">
+              <div class="caption">
+                <h3>前端开发工程师</h3>
+                <p>唐建军</p>
+                <p>立职于互联网前端开发行业，擅长web前端，移动端，H5开发；有团队合作经验，乐于分享交流前端技术；爱好摄影，有Photoshop基本技术，可切图，及图像相关处理</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <!-- pageC container -->
+      <li id="pageC" class="page-container" style="display:none;">
+        <header>SKILLS 技能</header>
+        <div class="pageTop">
+          <div class="media">
+            <div class="media-left media-middle">
+              <a href="#" class="leftIcon">
+                <i class="iconfont">&#xe501;</i>
+              </a>
+            </div>
+            <div class="media-body infoText">
+              <h4 class="media-heading">HTML</h4>
+                <p>熟练使用符合语义的HTML5结构化标签，书写符合W3C规范的前端代码，处理不同浏览器的兼容性</p>
+            </div>
+          </div>
+          <hr/>
+          <div class="media">
+          <div class="media-body infoText">
+              <h4 class="media-heading">CSS</h4>
+              <p>熟练使用DIV+CSS进行网页布局，利用rem，viewport，media标签多种方案对移动端适配；熟悉CSS3新特性，能够使用canvas绘图，地理定位，拖拽，css3动画特效等相关API</p>
+            </div>
+            <div class="media-right media-middle">
+              <a href="#" class="leftIcon">
+                <i class="iconfont">&#xe605;</i>
+              </a>
+            </div>
+          </div>
+          <hr/>
+          <div class="media">
+            <div class="media-left media-middle">
+              <a href="#" class="leftIcon">
+              <i class="iconfont">&#xe667;</i>
+                <!-- <img class="media-object" src="img/zyh.jpg" alt="..."> -->
+              </a>
+            </div>
+            <div class="media-body infoText">
+              <h4 class="media-heading">JavaScript</h4>
+              <p>熟练掌握JavaScript、DOM、BOM技术，使用原生JS，jQuery操作页面，实现页面交互；熟悉Ajax原理，能够使用Ajax实现与服务器通信，完成页面的局部提交和刷新；熟悉ES5/ES6的常用方法和功能扩展</p>
+            </div>
+          </div>
+          <hr/>
+          <div class="media">
+            <div class="media-body infoText">
+              <h4 class="media-heading">框架</h4>
+              <p>熟练使用Bootstrap、SUI、Swiper等框架插件，实现响应式网站开发；熟悉掌握MVC编程模式，了解Angular，React，Vue框架基本工作原理，可配合webpack进行组件化模块化开发</p>
+            </div>
+            <div class="media-right media-middle">
+              <a href="#" class="leftIcon">
+                <i class="iconfont">&#xe6c3;</i>
+              </a>
+            </div>
+            <hr/>
+            <div class="media">
+            <div class="media-left media-middle">
+              <a href="#" class="leftIcon">
+                <i class="iconfont">&#xe63b;</i>
+              </a>
+            </div>
+            <div class="media-body infoText">
+              <h4 class="media-heading">Node</h4>
+              <p>了解NodeJs后台开发，能够利用Express框架搭建服务环境，处理路由分发，并结合分布式数据库MongoDB进行数据存储</p>
+            </div>
+          </div>
+          <hr/>
+          <div class="media">
+            <div class="media-body infoText">
+              <h4 class="media-heading">PhotoShop</h4>
+              <p>熟悉Photoshop基本操作，可以根据设计图独立完成切图工作，亦对图像构图，调色有所了解</p>
+            </div>
+            <div class="media-right media-middle">
+              <a href="#" class="leftIcon">
+                <i class="iconfont">&#xe7d0;</i>
+              </a>
+            </div>
+            <hr/>
+            
+          </div>
+        </div> 
+      </li>
+      <li id="pageD" class="page-container" style="display:none;">
+        <header>WORKED 经历</header>
+        <div class="pageTop">
+          <div class="jumbotron">
+            <div class="container">
+                <img id="workImg" src="../public/img/10.jpg" style="width:100%">
+              <!-- <div class="col-xs-12"> -->
+              <!-- </div> -->
+              <!-- <div class="row"> -->
+                <div class="col-xs-6 col-md-3 imgDiv">
+                  <a href="#" class="thumbnail">
+                    <img src="../public/img/4.jpg" alt="...">
+                    <p>名称：</p>
+                  </a>
+                  <div class="workInfo">
+                    <p>职位：</p>
+                    <p>时间：</p>
+                    <!-- 负责PC端、移动端的Web前端页面开发，与设计人员沟通制定前端交互效果，配合后台工程师进行数据交互处理 -->
+                    <p>职责：</p>
+                    <!-- <p>作品：<a href="">润美传媒</a></p> -->
+                  </div>
+                </div>
+                <div class="col-xs-6 col-md-3 imgDiv">
+                  <a href="#" class="thumbnail">
+                    <p>loading...</p>
+                    <img src="../public/img/3.jpg" alt="...">
+                  </a>
+                  <div class="workInfo">
+                    <p>loading...</p>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-md-3 imgDiv">
+                  <a href="#" class="thumbnail">
+                    <p>loading...</p>
+                    <img src="../public/img/5.jpg" alt="...">
+                  </a>
+                  <div class="workInfo">
+                    <p>loading...</p>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-md-3 imgDiv">
+                  <a href="#" class="thumbnail">
+                    <p>loading...</p>
+                    <img src="../public/img/8.jpg" alt="...">
+                  </a>
+                  <div class="workInfo">
+                    <p>loading...</p>
+                  </div>
+                </div>
+              <!-- </div> -->
+            </div>
+          </div>
+          <div id="showDiv"><img src=""><div class="showDivInfo"></div></div>
+        </div> 
+      </li>
+      <li id="pageE" class="page-container" style="display:none;">
+        <header>PROJECT 项目</header> 
+        <div id="pageBack" class="page-num">
+          <div class="pageTop">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      名称
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <ul class="list-group">
+                  <li class="list-group-item">详情</li>
+                </ul>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      名称
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <ul class="list-group">
+                    <li class="list-group-item">详情</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      名称
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                  <ul class="list-group">
+                    <li class="list-group-item">详情</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingFour">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      名称
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                  <ul class="list-group">
+                    <li class="list-group-item">详情</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li id="pageF" class="page-container" style="display:none;">
+        <header>BLOGS 友链</header>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="bolgs">
+        </div>
+        <div class="blogs pageTop">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 more">
+            <a href="../../">阿七博客</a>
+          </div>
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 more">
+            <a href="###">个人摄影网站(开发中)</a>
+          </div>
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 more">
+            <a href="https://github.com/tjjseven">GitHub</a>
+          </div>
+        </div> 
+      </li>
+      <li id="pageG" class="page-container" style="display:none;">
+        <header>OTHER 其他</header> 
+        <p style="text-align: center;margin-top: 100px;">loading...</p>
+      </li>
+    </ul>
+  </section>
+  <footer>← 请左右划动屏幕 →</footer>
+  <script type="text/javascript" src="../public/js/jquery.js"></script>
+  <script type="text/javascript" src="../public/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript">
+    window.onload=function(){  
+      // if(document.documentElement.scrollHeight <= document.documentElement.clientHeight) {  
+      //     bodyTag = document.getElementsByTagName('body')[0];  
+      //     bodyTag.style.height = document.documentElement.clientWidth / screen.width * screen.height + 'px';  
+      // }  
+      // setTimeout(function() {  
+      //     window.scrollTo(0, 100)  
+      // }, 0);  
+
+        // function hideAddressBar_android(){         
+        //   var n = navigator.userAgent; 
+        //   if(n.match(/UCBrowser/i)){ 
+        //     //uc浏览器 
+        //     hideAddressBar_ios(); 
+        //     return false;          
+        //   } 
+        //   var self = document.getElementsByTagName( body )[0]; 
+        //   if(self.requestFullscreen) { 
+        //     //html5新增的全屏方法 
+        //     self.requestFullscreen(); 
+        //   }else if (self.mozRequestFullScreen) { 
+        //     //针对mozlia内核的
+        //     hack self.mozRequestFullScreen();
+        //    } else if (self.webkitRequestFullScreen) { 
+        //     //针对webkit内核的
+        //     hack self.webkitRequestFullScreen(); 
+        //   } 
+        // };
+        // hideAddressBar_android();
+
+
+      // var system ={};  
+      // var p = navigator.platform;       
+      // system.win = p.indexOf("Win") == 0;  
+      // system.mac = p.indexOf("Mac") == 0;  
+      // system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);     
+      // if(system.win||system.mac||system.xll){//如果是电脑跳转
+      //   setTimeout(function(){
+      //     window.location.href="";  
+      //   },10000)
+          
+      // }else{  //如果是手机,跳转
+      //   setTimeout(function(){
+      //       window.location.href="";  
+      //     },10000)
+      // }
+
+
+
+
+
+
+// (function( win ){
+//   var doc = win.document;
+  
+//   // If there's a hash, or addEventListener is undefined, stop here
+//   if(!win.navigator.standalone && !location.hash && win.addEventListener ){
+    
+//     //scroll to 1
+//     win.scrollTo( 0, 1 );
+//     var scrollTop = 1,
+//       getScrollTop = function(){
+//         return win.pageYOffset || doc.compatMode === "CSS1Compat" && doc.documentElement.scrollTop || doc.body.scrollTop || 0;
+//       },
+    
+//       //reset to 0 on bodyready, if needed
+//       bodycheck = setInterval(function(){
+//         if( doc.body ){
+//           clearInterval( bodycheck );
+//           scrollTop = getScrollTop();
+//           win.scrollTo( 0, scrollTop === 1 ? 0 : 1 );
+//         } 
+//       }, 15 );
+    
+//     win.addEventListener( "load", function(){
+//       setTimeout(function(){
+//         //at load, if user hasn't scrolled more than 20 or so...
+//         if( getScrollTop() < 20 ){
+//           //reset to hide addr bar at onload
+//           win.scrollTo( 0, scrollTop === 1 ? 0 : 1 );
+//         }
+//       }, 0);
+//     }, false );
+//   }
+// })( this );
+      
+    };  
+  </script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+
+/******************************
+.overlay anim
+******************************/
+@keyframes fx-overlay {
+  0% {
+    visibility: visible;
+    color: transparent;
+  }
+
+  50% {
+    background-color: #1a242f;
+    color: white;
+  }
+
+  100% {
+    visibility: visible;
+    background-color: #1a242f;
+    color: #FFF;
+  }
+}
+
+@keyframes fx-overlay-reverse {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    background-color: #1a242f;
+    color: #FFF;
+  }
+
+  27% {
+    opacity: 1;
+    color: transparent;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  94% {
+    opacity: 0;
+    visibility: visible;
+    background-color: #1a242f;
+    color: transparent;
+  }
+
+  95% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  100% {
+    visibility: hidden;
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fx-overlay {
+  0% {
+    visibility: visible;
+    color: transparent;
+  }
+
+  50% {
+    background-color: #1a242f;
+    color: white;
+  }
+
+  100% {
+    visibility: visible;
+    background-color: #1a242f;
+    color: #FFF;
+  }
+}
+
+@-moz-keyframes fx-overlay-reverse {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    background-color: #1a242f;
+    color: #FFF;
+  }
+
+  27% {
+    opacity: 1;
+    color: transparent;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  94% {
+    opacity: 0;
+    visibility: visible;
+    background-color: #1a242f;
+    color: transparent;
+  }
+
+  95% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  100% {
+    visibility: hidden;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fx-overlay {
+  0% {
+    visibility: visible;
+    color: transparent;
+  }
+
+  50% {
+    background-color: #1a242f;
+    color: white;
+  }
+
+  100% {
+    visibility: visible;
+    background-color: #1a242f;
+    color: #FFF;
+  }
+}
+
+@-webkit-keyframes fx-overlay-reverse {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    background-color: #1a242f;
+    color: #FFF;
+  }
+
+  27% {
+    opacity: 1;
+    color: transparent;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  94% {
+    opacity: 0;
+    visibility: visible;
+    background-color: #1a242f;
+    color: transparent;
+  }
+
+  95% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  100% {
+    visibility: hidden;
+    opacity: 1;
+  }
+}
+.overlay.active {
+  animation: fx-overlay .8s 1 ease-in-out forwards;
+  -moz-animation: fx-overlay .8s 1 ease-in-out forwards;
+  -webkit-animation: fx-overlay .8s 1 ease-in-out forwards;
+}
+
+.overlay.active_reverse {
+  animation: fx-overlay-reverse .8s 1 ease-in backwards;
+  -moz-animation: fx-overlay-reverse .8s 1 ease-in backwards;
+  -webkit-animation: fx-overlay-reverse .8s 1 ease-in backwards;
+}
